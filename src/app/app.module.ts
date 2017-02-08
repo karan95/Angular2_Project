@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
+import { HeaderAppComponent } from './header/header.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   declarations: [
-    AppComponent
+    AppComponent, HeaderAppComponent
   ],
   bootstrap: [AppComponent]
 })
